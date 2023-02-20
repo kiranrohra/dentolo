@@ -42,19 +42,6 @@ resource "aws_db_instance" "db" {
   apply_immediately                     = true
 }
 
-# resource "aws_db_instance" "example" {
-#   identifier             = "dentolo-postgres"
-#   engine                 = "postgres"
-#   engine_version         = "13.4"
-#   instance_class         = "db.t2.micro" 
-#   allocated_storage      = 20
-#   db_name                   = "dentolo"
-#   username               = "dentolo_user"
-#   password               = "dentolo_password"
-#   parameter_group_name   = "default.postgres13"
-#   vpc_security_group_ids = ["${aws_security_group.security-tf.id}"]
-# }
-
 # resource "aws_instance" "web" {
 #   ami             = "ami-0d1ddd83282187d18"
 #   instance_type   = "t2.micro"
